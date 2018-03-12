@@ -1,0 +1,44 @@
+
+HW #5.
+
+Question D.
+
+1. Theta(x^2)
+
+
+2. Theta(log(x))
+
+
+3. Theta(N^3)
+
+
+4. Theta(N+M)
+j is declared outside the loop.
+
+
+5. Theta(NlogN)
+
+
+6. Assume there exists x_1 such that f(x) >1 for all x > x_1.
+Also assume x is monotonic.
+M = first x such that f(x) < f(x)^2
+=> M > x_1
+let k = 2ln(10)/ln(b)
+when x>M, ln(f(x)) < 2 ln(f(x)) iff
+ln(f(x))/ln(b) < K ln(f(x))/ln(10)
+log_b f(x) < K log_10 f(x)
+Therefore, log_b(f(x)) in log_10(f(x))
+
+
+7.Take the highest degree term, cx^n.
+ Then there exists a constant w for some x great enough
+ log(f(x)) <= log(c*w*x^n)) iff
+ log(f(x)) <= n*log(x)+ log(c*w)
+ Then there exists a constant z for some x great enough
+ c*nlog(x) >= n*log(x) + log(c*w)
+ Therefore log(f(x)) in O(log(x)).
+
+
+8.we have that f(n)/(upperf(n)) is non-decreasing since f' is non-negative.
+ Take C = 2 inf f(n)/(upperf(n)) . Then it is clear that for all n upperf(n) < C f(n)
+ which implies that upperf(n) in O(f(n)).
