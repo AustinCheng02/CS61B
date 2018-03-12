@@ -1,0 +1,5 @@
+
+None of the tests pass. For the first test of creating .gitlet directory, I don't understand why the directory wouldn't be created. I called 
+File file = new File(".gitlet");
+Boolean made = file.mkdir();
+Please help me by explaining why my code isn't creating a directory.
